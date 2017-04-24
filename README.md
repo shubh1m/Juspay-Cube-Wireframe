@@ -6,7 +6,7 @@ Technologies used:
  * Javascript
  
 ## Use cases:
- `drag`: Rotate cube along the axis passing through center. Initial speed of rotation depends on the drag length which then decreases by a factor of `rate`.  
+ `drag`: Rotate cube along the axis passing through center. Initial speed of rotation depends on the drag length which then decreases by a factor of `rate` (initially set to 0.999).  
  `click`: Decreases the velocity by a factor of `fric` (set to 0.001).
 
 
@@ -20,4 +20,4 @@ Technologies used:
  &nbsp;&nbsp;&nbsp;&nbsp;* mousedown: get mouse pointer coordinates of the time when the mouse button is pressed  
  &nbsp;&nbsp;&nbsp;&nbsp;* mouseup: get coordinates of the mouse pointer when the mouse button is released. Calculate change in coordinates from the time when mouse button is pressed to the time when it is released. If the change in coordinates is 0 => it is a click event, which further decreases rotation by a value `fric` each time a click event ocuurs.  
  Else it is a drag event which speeds up the rotation of cube with speed proportional to drag distance. On each frame change in angle decreases by a factor of `rate`.
-7. On each drag, `fric` is set to 0.
+7. On each drag, `fric` is reset to 0.
