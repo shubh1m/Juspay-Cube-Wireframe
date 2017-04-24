@@ -11,7 +11,7 @@ Technologies used:
 
 
 ## Code functionality:
-1. Create a `\<canvas>` element which is used to create graphics.
+1. Create a `<canvas>` element which is used to create graphics.
 2. `canvas.getContext()` method returns a 2 dimensional drawing context on the canvas.
 3. Create an array consisting of cube vertices in 3D. Also create a 'faces' array which has indexes of vertices which create each face of the cube.
 4. Call `drawCube()` function after the page has been loaded
