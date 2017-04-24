@@ -127,7 +127,7 @@
 			// If change in coordinates is zero, implies a click event and thus increment the
 			// value of friction on each click
 			if(mouseUpdate.x == 0 && mouseUpdate.y == 0)
-				fric += 0.01;
+				fric += 0.001;
 			// Else it is a drag event, thus calculate dx and dy and call updateCube()
 			else {
 				mouseUpdate = transformXY(mouseUpdate);
